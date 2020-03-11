@@ -1,24 +1,9 @@
-/*
-Подсказки:
-  Вызов плейсхолдера:
-  @extend %placeholder-name;
-
-  Вызов миксина:
-  @include mixin-name;
-
-  Вызов переменной:
-  color: @var-name
-
-  Вызов наследования стилий от класса:
-  @extend .class-name;
-*/
-
 //библиотеки и плагины
 @import "vendors.scss";
 
 //шрифты
 @import "fonts.scss";
-@import "_icons.scss";
+//@import "_icons.scss";
 
 //переменный и миксины
 @import "_vars.scss";
@@ -27,9 +12,30 @@
 //базовые глобальные стили
 @import "basic.scss";
 
-//страницы
-
 //глобальные модули
 @import "intro.scss";
+@import "header.scss";
+@import "mob-menu.scss";
+@import "footer.scss";
+@import "soc.scss";
 
 //модули
+@import "main-sec.scss";
+@import "big-slider.scss";
+@import "slide.scss";
+@import "platform-sec.scss";
+@import "analityc-sec.scss";
+@import "advantages-sec.scss";
+@import "partners-sec.scss";
+@import "about-sec.scss";
+@import "news-sec.scss";
+@import "catalog-sec.scss";
+@import "smi-sec.scss";
+@import "main-pic.scss";
+@import "location-sec.scss";
+@import "slide-sec.scss";
+@import "faq-sec.scss";
+@import "cases-sec.scss";
+@import "demo-sec.scss";
+@import "main-pic-slider.scss";
+@import "locations-sec.scss";

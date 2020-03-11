@@ -1,7 +1,5 @@
-'use strict'; //строгий режим
+'use strict';
 
-/*зависимости*/
-//подключаем зависимости
 var gulp = require('gulp'), // сам gulp
     browserSync = require('browser-sync').create(), //синхронизация с браузером
     notify = require('gulp-notify'), //вывод ошибок в консоль терминала
@@ -74,8 +72,8 @@ gulp.task('sass', function() {
 //таск vendors
 gulp.task('vendors', function(){
   return gulp.src([
-    'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/slick-carousel/slick/slick.min.js'
+    'node_modules/swiper/js/swiper.min.js',
+    'node_modules/wowjs/dist/wow.js'
   ])
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest('build/js/')) //директория куда складывать скомпилированые файлы
@@ -99,14 +97,14 @@ gulp.task('scripts', function(){
 
 //таск imgOptimiz
 gulp.task('imgOptimiz', function(){
-  return gulp.src('src/static/img/pic/*')
+  return gulp.src('src/static/img/pic/**/*')
     .pipe(tingpng('hwgYyJfq6xpD48zZDrzwQ4tnrTK2JDKj'))
     .pipe(gulp.dest('build/img/pic/'))
 });
 
 //таск pic, favicon, og, svg
 gulp.task('pic', function() {
-  return gulp.src('src/static/img/pic/*')      
+  return gulp.src('src/static/img/pic/**/*')      
     .pipe(gulp.dest('build/img/pic/'))
     .pipe(browserSync.reload({
       stream: true

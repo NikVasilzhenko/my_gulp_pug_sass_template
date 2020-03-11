@@ -1,0 +1,51 @@
+.analityc-sec{
+  padding: 88px 0 60px;
+  &__shem{    
+    position: relative;
+    margin-top: 100px;
+    img{width: 100%;}
+    .hint__hide{width: 230px;}
+    &-item{      
+      &_1{
+        top: 3%;
+        left: 8%;
+      }
+      &_2{
+        top: 81%;
+        left: 18%;
+      }
+      &_3{
+        top: 44%;
+        left: 37%;
+      }
+      &_4{
+        top: 3%;
+        left: 61%;
+      }
+      &_5{
+        top: 78%;
+        left: 81%;
+      }
+      &_6{
+        top: 4%;
+        left: 91%;
+      }
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    &__shem{
+      &-item{
+        &_6{
+          left: 82%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 100px 0;
+    &__shem{
+      margin-top: 64px;
+      .hint{transform: scale(.5);}
+    }
+  }
+}

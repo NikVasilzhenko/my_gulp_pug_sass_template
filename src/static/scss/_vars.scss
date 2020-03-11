@@ -1,11 +1,21 @@
 //цвета
 $clr-txt: #000;
-$clr-bg-main: #fff;
+$clr-bg-main: #FAFAFA;
+$clr-blue: #00B8FF;
+$clr-viol: #8B82FF;
+
 $clr-placeholder: #000;
 $clr-input: #000;
 
+//градиент
+$grad-main: linear-gradient(90deg, #918BFC 0%, #35DCFC 100%);
+$grad-title: linear-gradient(to right, #936FFF 0%, #00E9FF 71.35%, #FFFFFF 99.48%);
+$grad-main-vert: linear-gradient(to bottom, #918BFC 0%, #35DCFC 100%);
+$grad-bg-top: linear-gradient(180deg, #FAFAFA 0%, #fff 100%);
+$grad-bg-bottom: linear-gradient(180deg, #fff 0%, #FAFAFA 100%);;
+
 //шрифты
-$font-main: 'Arial', sans-serif;
-$font-second: FontName;
+$font-main: 'Manrope', sans-serif;
+$font-second: 'Roboto', sans-serif;
 
 //тени

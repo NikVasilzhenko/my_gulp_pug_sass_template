@@ -1,0 +1,79 @@
+.catalog-sec{
+  position: relative;
+  padding: 130px 0 113px;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/pic/v-bg.png) 0 0 no-repeat;
+    background-size: auto 100%;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+  &__wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 405px;
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  &__pic{
+    width: calc(100% - 405px);
+    img{
+      max-width: unset;
+      height: 549px;
+    }
+  }
+  &__title{
+    @include h2;
+    margin-bottom: 32px;
+  }
+  &__txt{@include txt;}
+  &__btn{
+    display: inline-block;
+    margin-top: 40px;
+  }
+  @media only screen and (max-width : 1023px){
+    padding: 92px 0 158px;
+    &__wrap{display: block;}
+    &__content{
+      width: 100%;
+      margin-bottom: 46px;
+      padding: 0;
+    }
+    &__pic{
+      width: 100%;
+      img{height: 437px;}
+    }
+    &__title{margin-bottom: 40px;}
+    &__btn{
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      bottom: -68px;
+      transform: translateX(-50%);
+    }
+  }
+  @media only screen and (max-width : 767px){
+    padding: 120px 0 222px;
+    &:before{background-position: center 0;}
+    &__content{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__pic{
+      img{height: 235px;}
+    }
+    &__title{margin-bottom: 30px;}
+    &__btn{bottom: -90px;}
+  }
+}

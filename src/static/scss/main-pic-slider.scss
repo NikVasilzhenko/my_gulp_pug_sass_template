@@ -1,0 +1,51 @@
+.main-pic-slider{
+	position: relative;
+	&__pagination{
+		position: absolute;
+		z-index: 10;
+		left: 0;
+		bottom: 10vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		.swiper-pagination-bullet{
+			cursor: pointer;
+			display: block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			position: relative;
+			margin: 0 6px;
+			border: 1px solid transparent;
+			transition: border-color .25s;
+			&:before{
+				content: '';
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: #fff;
+				opacity: .5;
+				transition: .25s;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -4px 0 0 -4px;
+			}
+			&:hover{
+				&:before{opacity: 1;}
+			}
+			&.swiper-pagination-bullet-active{
+				border-color: rgba(255, 255, 255, .5);
+				&:before{
+					opacity: 1;
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
+	@media only screen and (max-width : 767px){
+		&__pagination{bottom: 5vh;}
+	} 
+}

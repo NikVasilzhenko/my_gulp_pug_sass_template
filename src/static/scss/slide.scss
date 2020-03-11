@@ -1,0 +1,267 @@
+.slide{
+  &__wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 437px;
+  }
+  &__pic{width: calc(100% - 437px);}
+  &__img{
+    position: relative;
+    img{
+      max-width: unset;
+      height: 100%;
+    }
+    &_1{height: 882px;}
+    &_2{height: 854px;}
+    &_3{height: 857px; margin-right: -113px;}
+    &_4{height: 834px;}
+    &_5{height: 883px;}
+    &_6{height: 918px;}
+    &-item{
+      &_1{
+        &-hint{
+          &_1{top: 32%; left: 18%;}
+          &_2{top: 32%; left: 72%;}
+          &_3{top: 84%; left: 18%;}
+          &_4{top: 73%; left: 60%;}
+        }
+      }
+      &_2{
+        &-hint{
+          &_1{top: 20%; left: 20%;}
+          &_2{top: 20%; left: 72%;}
+          &_3{top: 41%; left: 63%;}
+          &_4{top: 72%; left: 22%;}
+          &_5{top: 79%; left: 74%;}
+        }
+      }
+      &_3{
+        &-hint{
+          &_1{top: 27%; left: 5%;}
+          &_2{top: 26%; left: 41%;}
+          &_3{top: 59%; left: 5%;}
+          &_4{top: 89%; left: 42%;}
+        }
+      }
+      &_4{
+        &-hint{
+          &_1{top: 33%; left: 30%;}
+          &_2{top: 29%; left: 88%;}
+          &_3{top: 83%; left: 30%;}
+          &_4{top: 84%; left: 83%;}
+        }
+      }
+      &_5{
+        &-hint{
+          &_1{top: 22%; left: 18%;}
+          &_2{top: 38%; left: 73%;}
+          &_3{top: 70%; left: 16%;}
+          &_4{top: 67%; left: 77%;}
+        }
+      }
+      &_6{
+        &-hint{
+          &_1{top: 43%; left: 21%;}
+          &_2{top: 33%; left: 84%;}
+          &_3{top: 58%; left: 77%;}
+          &_4{top: 82%; left: 23%;}
+          &_5{top: 81%; left: 85%;}
+        }
+      }
+    }
+  }
+  &__title{
+    @include h2;
+    margin-bottom: 30px;
+  }
+  &__txt{
+    @include txt;
+    width: 376px;
+  }
+  &__list{
+    margin-top: 48px;
+    width: 548px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &:last-child{margin-bottom: 0;}
+    &-icn{
+      width: 38px;
+      min-width: 38px;
+      margin-right: 39px;
+    }
+    &-txt{
+      flex-grow: 1;
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(0, 0, 0, .8);
+    }
+  }
+  &_revers{
+    .slide__wrap{flex-direction: row-reverse;}
+    .slide__img{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .slide__content{
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .slide__list{width: 290px;}
+    .slide__item{margin-bottom: 33px;}
+  }
+  @media only screen and (max-width : 1023px){
+    &__wrap{display: block;}
+    &__txt,
+    &__pic,
+    &__content{width: 100%;}
+    &__img{
+      &_1{height: 781px;}
+      &_3{height: 613px; margin: 20px 0 0 -30px;}
+      &_4{margin: 0 0 0 -78px;}
+      &_5{height: 784px; margin-top: 56px;}
+      &_6{height: 879px; margin-left: -43px;}
+      &-item{
+        &_1{
+          &-hint{
+            &_1{top: 32%; left: 16%;}
+            &_2{top: 27%; left: 64%;}
+            &_3{top: 84%; left: 18%;}
+            &_4{top: 73%; left: 60%;}
+          }
+        }
+        &_3{
+          &-hint{
+            &_1{top: 27%; left: 30%;}
+            &_2{top: 26%; left: 61%;}
+            &_3{top: 59%; left: 33%;}
+            &_4{top: 89%; left: 62%;}
+          }
+        }
+        &_4{
+          &-hint{
+            &_1{top: 33%; left: 30%;}
+            &_2{top: 29%; left: 78%;}
+            &_3{top: 83%; left: 30%;}
+            &_4{top: 84%; left: 74%;}
+          }
+        }
+        &_5{
+          &-hint{
+            &_1{top: 18%; left: 15%;}
+            &_2{top: 38%; left: 65%;}
+            &_3{top: 75%; left: 16%;}
+            &_4{top: 67%; left: 67%;}
+          }
+        }
+        &_6{
+          &-hint{
+            &_1{top: 34%; left: 21%;}
+            &_2{top: 23%; left: 80%;}
+            &_3{top: 58%; left: 68%;}
+            &_4{top: 83%; left: 21%;}
+            &_5{top: 83%; left: 79%;}
+          }
+        }
+      }
+    }
+    &__list{
+      width: 100%;
+      columns: 2;
+      column-gap: 50px;
+    }
+    &__item{
+      margin-bottom: 35px;
+      break-inside: avoid;
+    }
+    &_revers{
+      .slide__img{display: block;}
+      .slide__content{display: block}
+      .slide__list{width: 100%;}
+      .slide__item{margin-bottom: 35px;}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__title{font-size: 30px;}
+    &__list{
+      margin-top: 40px;
+      columns: auto;
+    }
+    &__item{
+      width: 100%;
+      margin-bottom: 27px;
+    }
+    &__img{
+      &_1{height: 372px; margin: 186px 0 0 -15px;}
+      &_2{height: 679px; margin: 40px 0 0 -185px;}
+      &_3{height: 537px; margin: 40px 0 0 -277px;}
+      &_4{height: 539px; margin: 52px 0 0 -100px;}
+      &_5{height: 538px; margin: 52px 0 0 -120px;}
+      &_6{height: 657px; margin: -15px 0 0 -42px;}
+      &-item{
+        &_1{
+          &-hint{
+            &_1{top: 23%; left: 2%;}
+            &_2{top: 6%; left: 39%;}
+            &_3{top: 69%; left: 7%;}
+            &_4{top: 73%; left: 55%;}
+          }
+        }
+        &_2{
+          &-hint{
+            &_1{top: 28%; left: 57%;}
+            &_2{top: 35%; left: 69%;}
+            &_3{top: 52%; left: 58%;}
+            &_4{top: 71%; left: 59%;}
+            &_5{top: 87%; left: 71%;}
+          }
+        }
+        &_3{
+          &-hint{
+            &_1{top: 35%; left: 64%;}
+            &_2{top: 60%; left: 73%;}
+            &_3{top: 79%; left: 63%;}
+            &_4{top: 89%; left: 78%;}
+          }
+        }
+        &_4{
+          &-hint{
+            &_1{top: 38%; left: 52%;}
+            &_2{top: 52%; left: 60%;}
+            &_3{top: 71%; left: 48%;}
+            &_4{top: 88%; left: 59%;}
+          }
+        }
+        &_5{
+          &-hint{
+            &_1{top: 22%; left: 50%;}
+            &_2{top: 35%; left: 65%;}
+            &_3{top: 69%; left: 67%;}
+            &_4{top: 88%; left: 58%;}
+          }
+        }
+        &_6{
+          &-hint{
+            &_1{top: 46%; left: 40%;}
+            &_2{top: 59%; left: 61%;}
+            &_3{top: 70%; left: 44%;}
+            &_4{top: 84%; left: 63%;}
+            &_5{top: 94%; left: 51%;}
+          }
+        }
+      }
+    }
+  }
+}

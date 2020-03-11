@@ -1,0 +1,45 @@
+.demo-sec{
+	padding: 228px 0;
+	background: center center no-repeat;
+	background-size: cover;
+	&__wrap{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__blc{
+		box-shadow: 0 11px 15px rgba(0, 0, 0, .2), 0 9px 46px rgba(0, 0, 0, .12), 0 24px 38px rgba(0, 0, 0, .1);
+		border-radius: 10px;
+		background: rgba(255, 255, 255, .95);
+		max-width: 475px;
+		width: 100%;
+		padding: 50px 27px 55px 60px;
+	}
+	&__title{
+		font-family: 'Roboto';
+		font-weight: bold;
+		font-size: 36px;
+		opacity: .8;
+		line-height: 42px;
+		margin-bottom: 24px;
+	}
+	&__txt{
+		@include txt;
+		margin-bottom: 30px;
+	}
+	&__btn{width: 240px;}
+ 	@media only screen and (max-width : 1023px){
+		padding: 334px 0;
+		&__wrap{justify-content: center;}
+	}
+ 	@media only screen and (max-width : 767px){
+		padding: 200px 0;
+		&__blc{
+			padding: 50px 20px 58px;
+			text-align: center;
+		}
+		&__btn{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+}

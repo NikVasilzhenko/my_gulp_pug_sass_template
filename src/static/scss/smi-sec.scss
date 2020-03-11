@@ -1,0 +1,47 @@
+.smi-sec{
+  color: #fff;
+  background: $grad-main;
+  text-align: center;
+  padding: 90px 0 95px;
+  &__title{
+    @include h2;
+    margin-bottom: 12px;
+  }
+  &__txt{
+    @include txt;
+    margin-bottom: 53px;
+  }
+  &__slider-wrap{
+    position: relative;
+    padding-bottom: 80px;
+  }
+  &__slider{
+    position: static;
+    padding-bottom: 0;
+    box-shadow: 0 11px 15px rgba(0, 0, 0, .2), 0 9px 46px rgba(0, 0, 0, 0.12), 0 24px 38px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .95);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 195px;
+    padding: 15px 30px;
+    filter: grayscale(100%);
+    opacity: .4;
+    transition: .25s;
+    &:hover{
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width : 1023px){
+    &__txt{
+      margin: 0 auto 52px;
+      max-width: 600px;
+    }
+  }
+  @media only screen and (max-width : 767px){}
+}

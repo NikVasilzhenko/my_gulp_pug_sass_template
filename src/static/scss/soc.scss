@@ -1,0 +1,30 @@
+.soc{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	li{
+		margin-right: 18px;
+		&:last-child{margin-right: 0;}
+		a{
+			width: 28px;
+			height: 28px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+            img{max-width: 16px;}
+		}
+	}
+}
+.header-soc .soc a{
+	background-color: #00B8FF;
+	&:hover{background: rgba(0, 0, 0, .5);}
+}
+.footer-soc .soc a{
+	background-color: rgba(0, 0, 0, .5);
+	&:hover{background: #00B8FF;}
+}
+.mob-menu-soc .soc a{
+	border: 2px solid #FFFFFF;
+	opacity: .5;
+}
