@@ -1,35 +1,6 @@
-/*
-Подсказки:
-  Вызов плейсхолдера:
-  @extend %placeholder-name;
-
-  Вызов миксина:
-  @include mixin-name;
-
-  Вызов переменной:
-  color: @var-name
-
-  Вызов наследования стилий от класса:
-  @extend .class-name;
-*/
-
-//библиотеки и плагины
 @import "vendors.scss";
-
-//шрифты
 @import "fonts.scss";
-@import "_icons.scss";
-
-//переменный и миксины
-@import "_vars.scss";
 @import "_mix.scss";
 
-//базовые глобальные стили
 @import "basic.scss";
-
-//страницы
-
-//глобальные модули
-@import "intro.scss";
-
-//модули
+@import "main.scss";

@@ -27,8 +27,9 @@
     "gulp-tinypng": "^1.0.2"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "gsap": "^1.17.0",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "scrollmagic": "^2.0.5",
+    "swiper": "^5.2.1"
   }
 }
